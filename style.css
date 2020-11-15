@@ -10,7 +10,7 @@ url("fonts/IBMPlexSerif-Regular.otf") format("opentype");
 
 
 @font-face{
-font-family: "IBMplexSerif-Italic";
+    font-family: "IBMplexSerif-Italic";
 src: url("fonts/IBMPlexSerif-Italic.woff") format("woff"),
 url("fonts/IBMPlexSerif-Italic.woff2") format("woff2"),
 url("fonts/IBMPlexSerif-Italic.otf") format("opentype");
@@ -20,7 +20,7 @@ url("fonts/IBMPlexSerif-Italic.otf") format("opentype");
 
 
 @font-face{
-font-family: "IBMPlexMono-Regular";
+    font-family: "IBMPlexMono-Regular";
 src: url("fonts/IBMPlexMono-Regular.woff") format("woff"),
 url("fonts/IBMPlexMono-Regular.woff2") format("woff2"),
 url("fonts/IBMPlexMono-Regular.otf") format("opentype");
@@ -30,7 +30,7 @@ url("fonts/IBMPlexMono-Regular.otf") format("opentype");
 
 
 @font-face{
-font-family: "IBMPlexSerif-MediumItalic";
+    font-family: "IBMPlexSerif-MediumItalic";
 src: url("fonts/IBMPlexSerif-MediumItalic.woff") format("woff"),
 url("fonts/IBMPlexSerif-MediumItalic.woff2") format("woff2"),
 url("fonts/IBMPlexSerif-MediumItalic.ttf") format("truetype");
@@ -52,14 +52,12 @@ body{
     height: 100vh;
     cursor: default;
     overflow: hidden;
-        cursor: crosshair;
-
-
+    cursor: crosshair;
 }
 
 
 p{
-font-family: "IBMplexSerif-Regular";
+    font-family: "IBMplexSerif-Regular";
 	line-height: 112%;
     margin-top: 8px;
     margin-left: 10px;
@@ -68,14 +66,15 @@ font-family: "IBMplexSerif-Regular";
     color: black;
    }
 
-em{font-family: "IBMplexSerif-Italic";
-color: black;
-text-decoration: none;}
+em{
+    font-family: "IBMplexSerif-Italic";
+    color: black;
+    text-decoration: none;}
 
 a:link, a:visited{
-	  font-family: "IBMplexSerif-Italic";
+    font-family: "IBMplexSerif-Italic";
     font-style: italic;
-	    color: black;
+    color: black;
     text-decoration: none;
 }
 
@@ -90,7 +89,7 @@ a:hover, a:active {
 
 ::selection {
     background-color: transparent;
-        color: #ebeced;
+    color: #ebeced;
     text-shadow: 1px 1px 1px #444, -1px -1px 1px white;}
 
 span{
@@ -98,7 +97,7 @@ span{
     font-style: italic;
     color: black;
     text-decoration: none;
-        cursor: sw-resize;
+    cursor: sw-resize;
 
 }
 
@@ -127,14 +126,11 @@ img{
     font-family: "IBMplexSerif-Regular";
     color: cornflowerblue;
     font-size: 0.3em;
-
 }
 
 
 
-span:hover + img{
-display: block;
-}
+span:hover + img{display: block;}
 
 
 
@@ -149,8 +145,8 @@ display: block;
     bottom: 0;
     left: 0;
     z-index: 11;
-padding-bottom: 85px;
-padding-right: -50px;}
+    padding-bottom: 85px;
+    padding-right: -50px;}
 
 
 .fleche{
@@ -160,8 +156,8 @@ padding-right: -50px;}
     right:8px;
     bottom: -40px ;
     color: #ebeced;
-text-shadow: 1px 1px 1px #444, -1px -1px 1px white;
-z-index: 9999;}
+    text-shadow: 1px 1px 1px #444, -1px -1px 1px white;
+    z-index: 9999;}
 
 
 .fleche:active{text-shadow: 1px 1px 1px white, -1px -1px 1px #444;}
@@ -194,8 +190,9 @@ input:checked + .cv{height: auto;}
     padding: 5px;
 }
 
-.cv-titles{font-family: "IBMPlexSerif-MediumItalic";
-font-style: normal;
+.cv-titles{
+    font-family: "IBMPlexSerif-MediumItalic";
+    font-style: normal;
 }
 
 .cv-text{
@@ -211,7 +208,7 @@ a.two  {
 
 a.two:hover  {
     font-family: "IBMPlexMono-Regular";
-        font-style: normal;
+    font-style: normal;
     text-shadow: none;
     text-decoration-color: cornflowerblue; 
     color: black;
@@ -220,15 +217,15 @@ a.two:hover  {
 
 a.three  {
     font-family: "IBMPlexMono-Regular";
-        font-style: normal;
+    font-style: normal;
     text-shadow: "";
     text-decoration: underline;
-       text-decoration-style: dotted;
+    text-decoration-style: dotted;
 }
 
 a.three:hover  {
     font-family: "IBMPlexMono-Regular";
-        font-style: normal;
+    font-style: normal;
     text-shadow: none;
     text-decoration-color: cornflowerblue; 
     color: cornflowerblue;
@@ -245,17 +242,16 @@ a.three:hover  {
     #cv{width: 100vw; height: 100vh;  overflow: hidden; top: 0;}
     .blur{backdrop-filter: blur(10px);
         background-color: rgba(255, 255, 255, 0.5);
-        height: 200vh; }
-    .cv{}
+        height: 200vh;}
     #phone{display: block;}
     img{display: none; max-width: 94vw; position: relative; padding-top: 8px;
     max-height: 94vh;
-    left: 50%;    transform: translate(-50%);
+    left: 50%;    
+    transform: translate(-50%);
 }
     
     .column{display: flex; width: 47%; float: left;}
     .column2{width: 20%; float: left;}
-    
     .cv-text{font-size: 0.2em;}
     .fleche{font-size: 0.9em; z-index: 10;
     position: fixed;
