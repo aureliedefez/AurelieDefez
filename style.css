@@ -237,7 +237,7 @@ a.three:hover  {
 @media screen and (max-width: 768px){
     body{overflow: hidden; margin: 0;}
     p{font-size: 0.4em;}
-    span{}
+    span{font-family: IBMplexSerif-Regular; font-style: normal;}
     span:hover + img{display: none;}
     #cv{width: 100vw; height: 100vh;  overflow: hidden; top: 0;}
     .blur{height: 200vh; z-index: 1;}
