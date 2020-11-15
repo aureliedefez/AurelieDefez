@@ -30,10 +30,10 @@ url("fonts/IBMPlexMono-Regular.otf") format("opentype");
 
 
 @font-face{
-font-family: "IBMPlexSerif-SemiBold";
-src: url("fonts/IBMPlexSerif-SemiBold.woff") format("woff"),
-url("fonts/IBMPlexSerif-SemiBold.woff2") format("woff2"),
-url("fonts/IBMPlexSerif-SemiBold.otf") format("opentype");
+font-family: "IBMPlexSerif-MediumItalic";
+src: url("fonts/IBMPlexSerif-MediumItalic.woff") format("woff"),
+url("fonts/IBMPlexSerif-MediumItalic.woff2") format("woff2"),
+url("fonts/IBMPlexSerif-MediumItalic.ttf") format("truetype");
     font-weight: 300;
     font-style: bold;
 }
@@ -164,8 +164,7 @@ text-shadow: 1px 1px 1px #444, -1px -1px 1px white;
 z-index: 9999;}
 
 
-.fleche:active{text-shadow: 1px 1px 1px white, -1px -1px 1px #444;
-}
+.fleche:active{text-shadow: 1px 1px 1px white, -1px -1px 1px #444;}
 
 #demo:hover{cursor: row-resize;}
 
@@ -183,19 +182,21 @@ z-index: 9999;}
 input{display: none;}
 input:checked + .cv{height: auto;}
 
-.column{width: 23%;
-float:left;
-padding: 5px;
+.column{
+    width: 23%;
+    float:left;
+    padding: 5px;
 }
 
-.column2{width: 12%;
-float:left;
-padding: 5px;
+.column2{
+    width: 12%;
+    float:left;
+    padding: 5px;
 }
 
-
-
-strong{font-family: "IBMplexSerif-SemiBold";}
+.cv-titles{font-family: "IBMPlexSerif-MediumItalic";
+font-style: normal;
+}
 
 .cv-text{
     font-family: "IBMPlexMono-Regular";
@@ -238,7 +239,7 @@ a.three:hover  {
 
 @media screen and (max-width: 768px){
     body{overflow: hidden; margin: 0;}
-    p{font-size: 0.4em;}
+    p{font-size: 0.3em;}
     span{}
     span:hover + img{display: none;}
     #cv{width: 100vw; height: 100vh;  overflow: hidden; top: 0;}
