@@ -185,7 +185,7 @@ input:checked + .cv{height: auto;}
 }
 
 .column2{
-    width: 12%;
+    width: 15%;
     float:left;
     padding: 5px;
 }
@@ -247,7 +247,7 @@ a.three:hover  {
     left: 50%;    
     transform: translate(-50%);}
     .column{display: flex; width: 47%; float: left;}
-    .column2{width: 20%; float: left;}
+    .column2{width: 30%; float: left;}
     .cv-text{font-size: 0.2em;}
     .fleche{font-size: 0.9em; z-index: 10;
     position: fixed;
