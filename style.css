@@ -66,6 +66,7 @@ p{
     color: black;
    }
 
+
 em{
     font-family: "IBMplexSerif-Italic";
     color: black;
@@ -114,26 +115,39 @@ img{
     max-height: 90vh;
 }
 
+.buy{
+    font-family: "IBMplexSerif-Regular";
+    font-style: normal;
+    color: cornflowerblue;
+    text-decoration: none;
+}
 
 /*-caption-*/
 
 .caption {
-    position:fixed;
-    bottom: 0;
+    position: absolute;
     float: left;
-    left: 50vw;
-    z-index: 999;
-    font-family: "IBMplexSerif-Regular";
-    color: cornflowerblue;
-    font-size: 0.3em;
+    width: 100%;
+    left: 0;
+    bottom: 0;
 }
 
+.caption-text{
+    font-family: "IBMPlexMono-Regular";
+    font-size: 0.3em;
+    position: absolute;
+    width: 30%;
+    float: left;
+    left: 50%;
+    bottom: 17px;
+line-height: normal;}
 
 
 span:hover + img{display: block;}
 
 
-
+#zone1, #zone2, #LF1, #LF2, #LF3, #VH1, #VH2, #NON1, #VERDANA1, #gott1, #GTA1, #matter1, #LF4, #ST1, #sand1, #tinder1, #luna, #sajada, #soap, #purple, #palimpsest{z-index: -1;
+display: none;}
 
 
 
