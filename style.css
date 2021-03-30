@@ -175,7 +175,7 @@ display: none;}
     z-index: 9999;}
 
 
-.fleche:active{text-shadow: 1px 1px 1px cornflowerblue, -1px -1px 1px cornflowerblue;}
+.fleche:active{color: #ebeced; text-shadow: 1px 1px 1px cornflowerblue, -1px -1px 1px cornflowerblue;}
 
 #demo:hover{cursor: row-resize;}
 
