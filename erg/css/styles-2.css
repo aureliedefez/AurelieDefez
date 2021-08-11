@@ -44,6 +44,7 @@ table {
 
 
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap');
 
 body{
     font-size: 0.75rem;
@@ -92,4 +93,10 @@ div.image-container figcaption{
 
 .sub-title{
 	text-decoration: underline dotted #000;
+}
+
+.text{
+	font-family: 'IBM Plex Serif', serif;
+	font-size: 1rem;
+	line-height: 1.1;
 }
