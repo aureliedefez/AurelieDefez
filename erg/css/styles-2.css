@@ -92,7 +92,12 @@ div.image-container figcaption{
 }
 
 .sub-title{
+	display: inline;
 	text-decoration: underline dotted #000;
+}
+
+.sub-title:hover{
+	background-color: #FFFCBC;
 }
 
 .text{
