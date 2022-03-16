@@ -1,3 +1,7 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,  figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; } body {line-height: 1;} ol, ul { list-style: none; } blockquote, q { quotes: none; } blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none;} table { border-collapse: collapse; border-spacing: 0; }
+
 
 @font-face{
 	font-family: "IBMplexSerif-Regular";
@@ -8,7 +12,6 @@ url("fonts/IBMPlexSerif-Regular.otf") format("opentype");
     font-style: normal;
 }
 
-
 @font-face{
     font-family: "IBMplexSerif-Italic";
 src: url("fonts/IBMPlexSerif-Italic.woff") format("woff"),
@@ -17,7 +20,6 @@ url("fonts/IBMPlexSerif-Italic.otf") format("opentype");
     font-weight: 200;
     font-style: italic;
 }
-
 
 @font-face{
     font-family: "IBMPlexMono-Regular";
@@ -28,7 +30,6 @@ url("fonts/IBMPlexMono-Regular.otf") format("opentype");
     font-style: normal;
 }
 
-
 @font-face{
     font-family: "IBMPlexSerif-MediumItalic";
 src: url("fonts/IBMPlexSerif-MediumItalic.woff") format("woff"),
@@ -38,52 +39,25 @@ url("fonts/IBMPlexSerif-MediumItalic.ttf") format("truetype");
     font-style: bold;
 }
 
-@font-face{
-    font-family:"BusinessHistory";
-    src: url("fonts/00BusinessHistory-Regular.woff2") format("woff2")
-}
-
 body{
-    width: 100vw;
-    height: 100vh;
-    font-size: 3.2em;
-    background: #ebeced;
-    cursor: default;
-    overflow: hidden;
+    background: #f4f4f4;
     cursor: crosshair;
-    margin-top: 10px;
+    color: #000;
+    margin: 0;
 }
 
-main{
-    font-size: 0.7em;
+b, strong {
+    font-family: "IBMPlexSerif-MediumItalic";
 }
 
-p{
-    font-family: "IBMplexSerif-Regular";
-	line-height: 112%;
-    margin-left: 10px;
-    margin-right: 10px;
-    z-index: 2;
-    color: black;
-	margin-top: 0;
-   }
-
-
-em{
-    font-family: "IBMplexSerif-Italic";
-    color: black;
-    text-decoration: none;}
-
-a:link, a:visited{
+a, a:visited{
     font-family: "IBMplexSerif-Italic";
     font-style: italic;
-    color: black;
     text-decoration: none;
+    color: #000;
 }
 
-
 a:hover, a:active {
-	font-family: "IBMplexSerif-Italic";
     color: ghostwhite;
     text-decoration: none;
     text-shadow: 0 0 20px rgba(100,100,237,0.7), 0 0 3px cornflowerblue;
@@ -92,190 +66,107 @@ a:hover, a:active {
 
 ::selection {
     background-color: transparent;
-    color: #ebeced;
-    text-shadow: 1px 1px 1px #444, -1px -1px 1px white;}
-
-span{
-    font-family: "IBMplexSerif-Italic";
-    font-style: italic;
-    color: black;
-    text-decoration: none;
-    cursor: sw-resize;
-
+    color: #f4f4f4;
+    text-shadow: 1px 1px 1px #444, -1px -1px 1px white;
 }
 
-span:hover {cursor: sw-resize;}
-
-img{
-    display: none;
-    z-index: -1;
-    position: absolute;
-    float: left;
-    bottom: 17px;
-    left: 17px; 
-    max-width: 46vw;
-    max-height: 90vh;
+.col-text {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 50vw;
 }
 
-.buy{
+.col-contact{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 50vw;
+}
+.text, .contact{
     font-family: "IBMplexSerif-Regular";
-    font-style: normal;
-    color: cornflowerblue;
-    text-decoration: none;
-}
-
-/*-caption-*/
-
-.caption {
-    position: absolute;
-    float: left;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-}
-
-.caption-text{
-    font-family: "IBMPlexMono-Regular";
-    font-size: 0.3em;
-    position: absolute;
-    width: 30%;
-    float: left;
-    left: 48vw;
-    bottom: 17px;
-line-height: normal;}
-
-
-span:hover + img{display: block;}
-
-
-#zone1, #zone2, #LF1, #LF2, #LF3, #KAT1, #PAULA, #PAULA2, #PAULA3, #VH1, #NON1, #VERDANA1, #gott1, #GTA1, #matter1, #LF4, #ST1, #sand1, #tinder1, #luna, #sajada, #soap, #purple, #palimpsest{z-index: -1; display: none;}
-
-
-
-/*-CV-*/
-
-#cv{
-    position: fixed;
-    width: 100vw;
-    bottom: 0;
-    left: 0;
-    z-index: 11;
-    padding-bottom: 85px;
-    padding-right: -50px;}
-
-
-.fleche{
-    font-family: "BusinessHistory";
     font-size: 1.5em;
-    position: fixed;
-    right:0.1em;
-    bottom: -0.7em;
-   color: ghostwhite;
-    text-decoration: none;
-    text-shadow: 0 0 20px rgba(100,100,237,0.7), 0 0 3px cornflowerblue;
-    z-index: 9999;}
-
-
-.fleche:active{color: #ebeced; text-shadow: 1px 1px 1px cornflowerblue, -1px -1px 1px cornflowerblue;}
-
-#demo:hover{cursor: row-resize;}
-
-.cv {
-    width: 100vw;
-    height: 0;
-    overflow: scroll;
-    margin-bottom: -5.5vw;
-    margin-right: 1.2vw;
-    padding-right: 50px;
+    line-height: 1.2;
+    padding: 15px;
 }
 
-
-
-input{display: none;}
-input:checked + .cv{height: auto;}
-
-.column{
-    width: 23%;
-    float:left;
-    padding: 5px;
+.col-img{
+    position: relative;
+    padding: 15px;
+    z-index: 500;
+    width: 25vw;
+    margin: auto;
+    margin-top: 25vh;
+}
+.col-img img, .col-img video{
+    width: 100%;
+    margin: auto;
+    height: auto;
+    padding-top: 15px;
 }
 
-.column2{
-    width: 15%;
-    float:left;
-    padding: 5px;
+figcaption{
+   font-family: "IBMPlexMono-Regular";
+   font-size: 0.7em;
+   background-color: #f4f4f4;
+   display: inline;
 }
 
-.cv-titles{
-    font-family: "IBMPlexSerif-MediumItalic";
+.col-contact figcaption{
+    font-size: 0.5em;
+    background-color: #f4f4f4;
+    display: block;
+ }
+
+.col-contact figcaption a {
+    font-family: "IBMPlexMono-Regular";
+    text-decoration: dotted underline;
     font-style: normal;
 }
 
-.cv-text{
-    font-family: "IBMPlexMono-Regular";
-    font-size: 0.3em;}
-
-a.two  {
-    font-family: "IBMPlexMono-Regular";
-    font-style: normal;
-    text-shadow: "";
-    text-decoration: underline;
-}
-
-a.two:hover  {
-    font-family: "IBMPlexMono-Regular";
-    font-style: normal;
-    text-shadow: none;
-    text-decoration-color: cornflowerblue; 
-    color: black;
-    cursor: ne-resize;}
-
-
-a.three  {
-    font-family: "IBMPlexMono-Regular";
-    font-style: normal;
-    text-shadow: "";
-    text-decoration: underline;
-    text-decoration-style: dotted;
-}
-
-a.three:hover  {
-    font-family: "IBMPlexMono-Regular";
-    font-style: normal;
-    text-shadow: none;
-    text-decoration-color: cornflowerblue; 
+.col-contact figcaption a:hover {
+    cursor: sw-resize;
     color: cornflowerblue;
-    cursor: nw-resize;}
-
-
-#phone{display: none;}
+    text-shadow: none;
+}
 
 @media screen and (max-width: 768px){
-    body{overflow: scroll; margin: 0; margin-top: -0.2em;}
-    p{font-size: 0.32em;}
-    span{font-family: IBMplexSerif-Regular; font-style: normal;}
-    span:hover + img{display: none;}
-    #cv{width: 100vw; height: 100vh;  overflow: scroll; top: 0;}
-    .blur{height: 200vh; z-index: 1;}
-    #phone{display: block;}
-    img{display: none; max-width: 94vw; position: relative; padding-top: 8px;
+    body{overflow: scroll; margin: 0;}
+    main{
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    .col-text{
+        width: 100vw;
+        position: relative;
+    }
+    .col-img{
+        width: 92%;
+        margin-top: 50vh;
+    }
+    .col-contact{
+        position: relative;
+        width: 100%;
+    }
+    .contact{
+        padding-top: 0;
+    }
+
+    img, video{
+    max-width: 100%; 
+    position: relative; 
+    padding-top: 15px;
     max-height: 94vh;
-    left: 50%;    
-    transform: translate(-50%);}
-    .column{display: flex; width: 46%; float: left;}
-    .column2{width: 30%; float: left;}
-    .cv-text{font-size: 0.2em;}
-    .fleche{font-size: 0.9em; z-index: 10;
-    position: fixed;
-    bottom: -35px;
-    right: 5px; }
-    
-
+    margin: auto;
+    }
+    figcaption{
+        width: 92%;
+        margin: auto;
+    }
+    .col-contact figcaption{
+        width: 100%;
+    }
 }
-
-@supports (backdrop-filter: none) {
-	.blur {backdrop-filter: blur(10px);
-           background-color: rgba(255, 255, 255, 0.3);}}
-
-@supports not (backdrop-filter: none) {
-  .blur {background-color: rgba(255, 255, 255, 0.93);}}
